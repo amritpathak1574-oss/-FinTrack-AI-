@@ -4,7 +4,7 @@ from groq import Groq
 from datetime import datetime
 
 # --- Groq Setup ---
-client = Groq(api_key="TUMHARI_GROQ_API_KEY_YAHAN_DALO")
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 st.set_page_config(page_title="FinTrack AI", page_icon="💰")
 st.title("💰 FinTrack AI (Powered by Groq)")
